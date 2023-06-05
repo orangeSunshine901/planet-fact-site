@@ -6,7 +6,12 @@ import Planets from "../Planets";
 const Saturn = () => {
   return (
     <div>
-      <Planets planet={5} size="saturn" activeClass="saturn-active-desktop" />
+      <Planets
+        planet={5}
+        size="saturn"
+        activeClass="saturn-active-desktop"
+        mobileActiveClass="saturn-active"
+      />
     </div>
   );
 };

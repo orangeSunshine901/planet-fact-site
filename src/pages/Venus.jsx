@@ -6,7 +6,12 @@ import Planets from "../Planets";
 const Venus = () => {
   return (
     <div>
-      <Planets planet={1} size="venus" activeClass="venus-active-desktop" />
+      <Planets
+        planet={1}
+        size="venus"
+        activeClass="venus-active-desktop"
+        mobileActiveClass="venus-active"
+      />
     </div>
   );
 };
