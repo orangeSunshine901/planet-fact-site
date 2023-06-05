@@ -777,7 +777,7 @@ nav {
     position: absolute;
     z-index: 2;
     background-color: var(--Black);
-    height: 90%;
+    height: 920px;
     width: 100%;
     padding-top: 1.5rem;
   }
