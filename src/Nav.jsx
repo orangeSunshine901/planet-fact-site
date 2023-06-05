@@ -1,4 +1,4 @@
-import data from "./data.json";
+import data from "./data";
 import { useState } from "react";
 import NavMobile from "./NavMobile";
 import { Link } from "react-router-dom";

@@ -1,6 +1,6 @@
 // This is component is for the mobile planet description
 
-import data from "./data.json";
+import data from "./data";
 
 const PlanetInfo = ({ planet, size, overview, structure, surface }) => {
   if (overview) {

@@ -1,4 +1,4 @@
-import data from "./data.json";
+import data from "./data";
 import { Link } from "react-router-dom";
 
 const planets = data;

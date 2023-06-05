@@ -1,6 +1,6 @@
 // This is component is for the desktop planet description
 
-import data from "./data.json";
+import data from "./data";
 
 const PlanetInfoDesktop = ({ planet, size, overview, structure, surface }) => {
   if (overview) {
