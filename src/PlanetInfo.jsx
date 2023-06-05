@@ -1,47 +1,71 @@
 // This is component is for the mobile planet description
+import mercuryPlanet from "./assets/planet-mercury.svg";
+import mercuryInternal from "./assets/planet-mercury-internal.svg";
+import mercuryGeology from "./assets/geology-mercury.png";
+import venusPlanet from "./assets/planet-venus.svg";
+import venusInternal from "./assets/planet-venus-internal.svg";
+import venusGeology from "./assets/geology-venus.png";
+import earthPlanet from "./assets/planet-earth.svg";
+import earthInternal from "./assets/planet-earth-internal.svg";
+import earthGeology from "./assets/geology-earth.png";
+import marsPlanet from "./assets/planet-mars.svg";
+import marsInternal from "./assets/planet-mars-internal.svg";
+import marsGeology from "./assets/geology-mars.png";
+import jupiterPlanet from "./assets/planet-jupiter.svg";
+import jupiterInternal from "./assets/planet-jupiter-internal.svg";
+import jupiterGeology from "./assets/geology-jupiter.png";
+import saturnPlanet from "./assets/planet-saturn.svg";
+import saturnInternal from "./assets/planet-saturn-internal.svg";
+import saturnGeology from "./assets/geology-saturn.png";
+import uranusPlanet from "./assets/planet-uranus.svg";
+import uranusInternal from "./assets/planet-uranus-internal.svg";
+import uranusGeology from "./assets/geology-uranus.png";
+import neptunePlanet from "./assets/planet-neptune.svg";
+import neptuneInternal from "./assets/planet-neptune-internal.svg";
+import neptuneGeology from "./assets/geology-neptune.png";
 
 import data from "./data";
 
 let Planetimages = [
   {
-    planet: "./assets/planet-mercury.svg",
-    internal: "./assets/planet-mercury-internal.svg",
-    geology: "./assets/geology-mercury.png",
+    planet: mercuryPlanet,
+    internal: mercuryInternal,
+    geology: mercuryGeology,
   },
   {
-    planet: "./assets/planet-venus.svg",
-    internal: "./assets/planet-venus-internal.svg",
-    geology: "./assets/geology-venus.png",
+    planet: venusPlanet,
+    internal: venusInternal,
+    geology: venusGeology,
   },
   {
-    planet: "./assets/planet-earth.svg",
-    internal: "./assets/planet-earth-internal.svg",
-    geology: "./assets/geology-earth.png",
+    planet: earthPlanet,
+    internal: earthInternal,
+    geology: earthGeology,
   },
   {
-    planet: "./assets/planet-mars.svg",
-    internal: "./assets/planet-mars-internal.svg",
-    geology: "./assets/geology-mars.png",
+    planet: marsPlanet,
+    internal: marsInternal,
+    geology: marsGeology,
   },
   {
-    planet: "./assets/planet-jupiter.svg",
-    internal: "./assets/planet-jupiter-internal.svg",
-    geology: "./assets/geology-jupiter.png",
+    planet: jupiterPlanet,
+    internal: jupiterInternal,
+    geology: jupiterGeology,
   },
   {
-    planet: "./assets/planet-saturn.svg",
-    internal: "./assets/planet-saturn-internal.svg",
-    geology: "./assets/geology-saturn.png",
+    planet: saturnPlanet,
+    internal: saturnInternal,
+    geology: saturnGeology,
   },
   {
-    planet: "./assets/planet-uranus.svg",
-    internal: "./assets/planet-uranus-internal.svg",
-    geology: "./assets/geology-uranus.png",
+    planet: uranusPlanet,
+    internal: uranusInternal,
+    geology: uranusGeology,
   },
   {
-    planet: "./assets/planet-neptune.svg",
-    internal: "./assets/planet-neptune-internal.svg",
-    geology: "./assets/geology-neptune.png",
+    planet: neptunePlanet,
+    internal: neptuneInternal,
+    geology: neptuneGeology,
   },
 ];
 
