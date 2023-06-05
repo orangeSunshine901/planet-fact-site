@@ -1033,10 +1033,10 @@ nav {
     width: 70px;
     position: absolute;
     margin: auto;
-    top: 0%;
+    top: 50%;
     left: 0;
     right: 0;
-    bottom: 10%;
+    bottom: 0;
     z-index: 1;
   }
 
