@@ -23,7 +23,7 @@ const Nav = () => {
   return (
     <div>
       <nav>
-        <div class="logo-wrapper">
+        <div className="logo-wrapper">
           <a className="logo">THE PLANETS</a>
         </div>
         <div className="desktop-nav-elements">
