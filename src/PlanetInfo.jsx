@@ -74,7 +74,11 @@ const PlanetInfo = ({ planet, size, overview, structure, surface }) => {
     return (
       <>
         <div className="planet-image">
-          <img className={size} src={Planetimages[planet].planet}></img>
+          <img
+            alt={data.name}
+            className={size}
+            src={Planetimages[planet].planet}
+          ></img>
         </div>
         <div className="planet-info">
           <div className="planet-info-text">
