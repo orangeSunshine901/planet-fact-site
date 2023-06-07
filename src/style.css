@@ -336,7 +336,7 @@ nav {
   padding-inline: 82px;
   padding-bottom: 0rem;
   grid-template-columns: 70% 30%;
-  height: 50rem;
+  height: 46rem;
   row-gap: 10px;
   justify-content: start;
   align-content: center;
@@ -611,6 +611,7 @@ nav {
   padding-bottom: 1rem;
   height: auto;
   overflow: hidden;
+  padding-bottom: 4rem;
 }
 
 .stats-section div {
