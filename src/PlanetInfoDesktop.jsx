@@ -100,7 +100,11 @@ const PlanetInfoDesktop = ({ planet, size, overview, structure, surface }) => {
     return (
       <>
         <div className="planet-image">
-          <img className={size} src={Planetimages[planet].internal}></img>
+          <img
+            alt={`${data.name}-surface structure`}
+            className={size}
+            src={Planetimages[planet].internal}
+          ></img>
         </div>
         <div className="planet-info">
           <div className="planet-info-text">
@@ -120,8 +124,16 @@ const PlanetInfoDesktop = ({ planet, size, overview, structure, surface }) => {
     return (
       <>
         <div className="planet-image">
-          <img className={size} src={Planetimages[planet].planet}></img>
-          <img className="geology-img" src={Planetimages[planet].geology}></img>
+          <img
+            alt={data.name}
+            className={size}
+            src={Planetimages[planet].planet}
+          ></img>
+          <img
+            alt={`${data.name}-surface structure`}
+            className="geology-img"
+            src={Planetimages[planet].geology}
+          ></img>
         </div>
         <div className="planet-info">
           <div className="planet-info-text">
