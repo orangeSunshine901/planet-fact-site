@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const Nav = () => {
   // setMobileMenu keeps a track of the state of the NavMenu for the function mobileNav
   const [mobileMenu, setMobileMenu] = useState(false);
+  const [desktopMenu, setDesktopMenu] = useState(false);
 
   // This is a function that shows/hides the nav menu on mobile after a user clicks on the hamburger icon
 
@@ -20,6 +21,22 @@ const Nav = () => {
     }
   }
 
+  function desktopNav(e) {
+    const navLinks = [
+      ...document.querySelectorAll(".desktop-nav-elements > a"),
+    ];
+    navLinks.map((planet) => {
+      if (
+        planet.text == e.target.text &&
+        e.target.classList.value == `${e.target.text.toLowerCase()}-nav`
+      ) {
+        e.target.classList.value = `${e.target.text.toLowerCase()}-nav-active`;
+      } else {
+        planet.classList.value = `${planet.text.toLowerCase()}-nav`;
+      }
+    });
+  }
+
   return (
     <div>
       <nav>
@@ -27,15 +44,75 @@ const Nav = () => {
           <a className="logo">THE PLANETS</a>
         </div>
         <div className="desktop-nav-elements">
-          {data.map((e) => (
+          <Link
+            disabled={(e) =>
+              e.target.classList.value == "mercury-nav-active" ? true : false
+            }
+            to={"/mercury"}
+            className="mercury-nav-active"
+            onClick={(e) => desktopNav(e)}
+          >
+            Mercury
+          </Link>
+          <Link
+            to={"/venus"}
+            className="venus-nav"
+            onClick={(e) => desktopNav(e)}
+          >
+            Venus
+          </Link>
+          <Link
+            to={"/earth"}
+            className="earth-nav"
+            onClick={(e) => desktopNav(e)}
+          >
+            Earth
+          </Link>
+          <Link
+            to={"/mars"}
+            className="mars-nav"
+            onClick={(e) => desktopNav(e)}
+          >
+            Mars
+          </Link>
+          <Link
+            to={"/jupiter"}
+            className="jupiter-nav"
+            onClick={(e) => desktopNav(e)}
+          >
+            Jupiter
+          </Link>
+          <Link
+            to={"/saturn"}
+            className="saturn-nav"
+            onClick={(e) => desktopNav(e)}
+          >
+            Saturn
+          </Link>
+          <Link
+            to={"/uranus"}
+            className="uranus-nav"
+            onClick={(e) => desktopNav(e)}
+          >
+            Uranus
+          </Link>
+          <Link
+            to={"/neptune"}
+            className="neptune-nav"
+            onClick={(e) => desktopNav(e)}
+          >
+            Neptune
+          </Link>
+          {/* {data.map((planets) => (
             <Link
-              className={`${e.name.toLowerCase()}-nav`}
-              key={e.id}
-              to={`/${e.name.toLowerCase()}`}
+              // className={`${planets.name.toLowerCase()}-nav`}
+              key={planets.id}
+              to={`/${planets.name.toLowerCase()}`}
+              onClick={(e) => desktopNav(e)}
             >
-              {e.name}
+              {planets.name}
             </Link>
-          ))}
+          ))} */}
         </div>
         <div className="mobile-nav-element">
           <button onClick={mobileNav}>

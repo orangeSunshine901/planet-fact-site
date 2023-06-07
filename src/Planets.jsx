@@ -4,17 +4,15 @@ import PlanetInfo from "./PlanetInfo";
 import PlanetInfoDesktop from "./PlanetInfoDesktop";
 
 const Planets = (props) => {
-  // These states keep track of the toggle for mobile planet description
-
+  // These states keep track of the toggle section
   const [overview, setOverview] = useState(true);
   const [structure, setStructure] = useState(false);
   const [surface, setSurface] = useState(false);
 
-  // This prop is for the different toggle colors of the planets which are set to active based on the user click for Desktop.
+  // This prop is for the different toggle colors of the planets which are set to active based on the user click for Desktop. Passing a css class as a prop based on the planet
   const activeClass = props.activeClass;
   const mobileactiveClass = props.mobileActiveClass;
 
-  // These functions are for the toggle functionality for mobile toggle menu.
   function toggleOverview() {
     const toggleBtnsMobile = document.querySelectorAll(
       "div.mobile-page-toggle > button"
