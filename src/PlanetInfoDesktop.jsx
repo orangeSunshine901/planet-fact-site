@@ -26,7 +26,7 @@ import neptuneGeology from "./assets/geology-neptune.png";
 
 import data from "./data";
 
-let Planetimages = [
+let planetImages = [
   {
     planet: mercuryPlanet,
     internal: mercuryInternal,
@@ -77,7 +77,7 @@ const PlanetInfoDesktop = ({ planet, size, overview, structure, surface }) => {
           <img
             alt={data.name}
             className={size}
-            src={Planetimages[planet].planet}
+            src={planetImages[planet].planet}
           ></img>
         </div>
         <div className="planet-info">
@@ -103,7 +103,7 @@ const PlanetInfoDesktop = ({ planet, size, overview, structure, surface }) => {
           <img
             alt={`${data.name}-surface structure`}
             className={size}
-            src={Planetimages[planet].internal}
+            src={planetImages[planet].internal}
           ></img>
         </div>
         <div className="planet-info">
@@ -127,12 +127,12 @@ const PlanetInfoDesktop = ({ planet, size, overview, structure, surface }) => {
           <img
             alt={data.name}
             className={size}
-            src={Planetimages[planet].planet}
+            src={planetImages[planet].planet}
           ></img>
           <img
             alt={`${data.name}-surface structure`}
             className="geology-img"
-            src={Planetimages[planet].geology}
+            src={planetImages[planet].geology}
           ></img>
         </div>
         <div className="planet-info">

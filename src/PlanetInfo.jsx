@@ -24,9 +24,10 @@ import neptunePlanet from "./assets/planet-neptune.svg";
 import neptuneInternal from "./assets/planet-neptune-internal.svg";
 import neptuneGeology from "./assets/geology-neptune.png";
 
+import { ReactSVG } from "react-svg";
 import data from "./data";
 
-let Planetimages = [
+let planetImages = [
   {
     planet: mercuryPlanet,
     internal: mercuryInternal,
@@ -74,11 +75,11 @@ const PlanetInfo = ({ planet, size, overview, structure, surface }) => {
     return (
       <>
         <div className="planet-image">
-          <img
+          <ReactSVG
             alt={data.name}
             className={size}
-            src={Planetimages[planet].planet}
-          ></img>
+            src={planetImages[planet].planet}
+          ></ReactSVG>
         </div>
         <div className="planet-info">
           <div className="planet-info-text">
@@ -100,11 +101,11 @@ const PlanetInfo = ({ planet, size, overview, structure, surface }) => {
     return (
       <>
         <div className="planet-image">
-          <img
+          <ReactSVG
             alt={`${data.name}-structure`}
             className={size}
-            src={Planetimages[planet].internal}
-          ></img>
+            src={planetImages[planet].internal}
+          ></ReactSVG>
         </div>
         <div className="planet-info">
           <div className="planet-info-text">
@@ -124,16 +125,16 @@ const PlanetInfo = ({ planet, size, overview, structure, surface }) => {
     return (
       <>
         <div className="planet-image">
-          <img
+          <ReactSVG
             alt={data.name}
             className={size}
-            src={Planetimages[planet].planet}
-          ></img>
-          <img
+            src={planetImages[planet].planet}
+          ></ReactSVG>
+          <ReactSVG
             alt={`${data.name}-surface structure`}
             className="geology-img"
-            src={Planetimages[planet].geology}
-          ></img>
+            src={planetImages[planet].geology}
+          ></ReactSVG>
         </div>
         <div className="planet-info">
           <div className="planet-info-text">
