@@ -325,6 +325,7 @@ nav {
   cursor: pointer;
   text-decoration: none;
   color: var(--Grey);
+  position: initial;
 }
 
 .planet-section {
@@ -678,6 +679,98 @@ nav {
     padding-top: 49px;
   }
 
+  .mercury-nav-active::before {
+    width: 60.23px;
+    left: 10px;
+    top: 0;
+  }
+
+  .mercury-nav:hover::before {
+    display: none;
+  }
+
+  .venus-nav-active::before {
+    width: 40px;
+    left: 10px;
+    top: 0;
+  }
+
+  .venus-nav:hover::before {
+    display: none;
+  }
+
+  .earth-nav-active::before {
+    width: 40px;
+    left: 10px;
+    top: 0;
+  }
+
+  .earth-nav:hover::before {
+    display: none;
+  }
+
+  .mars-nav-active::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 38px;
+    height: 3px;
+    height: 3px;
+    left: 10px;
+    background-color: var(--Orange);
+  }
+
+  .mars-nav:hover::before {
+    display: none;
+  }
+
+  .jupiter-nav-active::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    height: 3px;
+    left: 10px;
+    background-color: var(--Red);
+  }
+
+  .jupiter-nav:hover::before {
+    display: none;
+  }
+
+  .saturn-nav-active::before {
+    width: 50px;
+    height: 3px;
+    left: 10px;
+    top: 0;
+  }
+
+  .saturn-nav:hover::before {
+    display: none;
+  }
+
+  .uranus-nav-active::before {
+    width: 53px;
+    height: 3px;
+    top: 0;
+    left: 10px;
+  }
+
+  .uranus-nav:hover::before {
+    display: none;
+  }
+
+  .neptune-nav-active::before {
+    width: 58px;
+    top: 0;
+    left: 10px;
+  }
+
+  .neptune-nav:hover::before {
+    display: none;
+  }
+
   .desktop-nav-elements a {
     display: initial;
     font-size: 11px;
@@ -689,6 +782,7 @@ nav {
     cursor: pointer;
     color: var(--Grey);
     text-decoration: none;
+    position: relative;
   }
 
   .desktop-nav-elements a:hover {
