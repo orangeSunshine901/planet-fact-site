@@ -1,28 +1,28 @@
 // This is component is for the desktop planet description
 import mercuryPlanet from "./assets/planet-mercury.svg";
 import mercuryInternal from "./assets/planet-mercury-internal.svg";
-import mercuryGeology from "./assets/geology-mercury.png";
+import mercuryGeology from "./assets/geology-mercury.webp";
 import venusPlanet from "./assets/planet-venus.svg";
 import venusInternal from "./assets/planet-venus-internal.svg";
-import venusGeology from "./assets/geology-venus.png";
+import venusGeology from "./assets/geology-venus.webp";
 import earthPlanet from "./assets/planet-earth.svg";
 import earthInternal from "./assets/planet-earth-internal.svg";
-import earthGeology from "./assets/geology-earth.png";
+import earthGeology from "./assets/geology-earth.webp";
 import marsPlanet from "./assets/planet-mars.svg";
 import marsInternal from "./assets/planet-mars-internal.svg";
-import marsGeology from "./assets/geology-mars.png";
+import marsGeology from "./assets/geology-mars.webp";
 import jupiterPlanet from "./assets/planet-jupiter.svg";
 import jupiterInternal from "./assets/planet-jupiter-internal.svg";
-import jupiterGeology from "./assets/geology-jupiter.png";
+import jupiterGeology from "./assets/geology-jupiter.webp";
 import saturnPlanet from "./assets/planet-saturn.svg";
 import saturnInternal from "./assets/planet-saturn-internal.svg";
-import saturnGeology from "./assets/geology-saturn.png";
+import saturnGeology from "./assets/geology-saturn.webp";
 import uranusPlanet from "./assets/planet-uranus.svg";
 import uranusInternal from "./assets/planet-uranus-internal.svg";
-import uranusGeology from "./assets/geology-uranus.png";
+import uranusGeology from "./assets/geology-uranus.webp";
 import neptunePlanet from "./assets/planet-neptune.svg";
 import neptuneInternal from "./assets/planet-neptune-internal.svg";
-import neptuneGeology from "./assets/geology-neptune.png";
+import neptuneGeology from "./assets/geology-neptune.webp";
 
 import data from "./data";
 
