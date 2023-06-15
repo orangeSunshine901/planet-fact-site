@@ -24,7 +24,6 @@ import neptunePlanet from "./assets/planet-neptune.svg";
 import neptuneInternal from "./assets/planet-neptune-internal.svg";
 import neptuneGeology from "./assets/geology-neptune.png";
 
-import { ReactSVG } from "react-svg";
 import data from "./data";
 
 let planetImages = [
@@ -75,11 +74,11 @@ const PlanetInfo = ({ planet, size, overview, structure, surface }) => {
     return (
       <>
         <div className="planet-image">
-          <ReactSVG
+          <img
             alt={data.name}
             className={size}
             src={planetImages[planet].planet}
-          ></ReactSVG>
+          ></img>
         </div>
         <div className="planet-info">
           <div className="planet-info-text">
@@ -101,11 +100,11 @@ const PlanetInfo = ({ planet, size, overview, structure, surface }) => {
     return (
       <>
         <div className="planet-image">
-          <ReactSVG
+          <img
             alt={`${data.name}-structure`}
             className={size}
             src={planetImages[planet].internal}
-          ></ReactSVG>
+          ></img>
         </div>
         <div className="planet-info">
           <div className="planet-info-text">
@@ -125,16 +124,16 @@ const PlanetInfo = ({ planet, size, overview, structure, surface }) => {
     return (
       <>
         <div className="planet-image">
-          <ReactSVG
+          <img
             alt={data.name}
             className={size}
             src={planetImages[planet].planet}
-          ></ReactSVG>
-          <ReactSVG
+          ></img>
+          <img
             alt={`${data.name}-surface structure`}
             className="geology-img"
             src={planetImages[planet].geology}
-          ></ReactSVG>
+          ></img>
         </div>
         <div className="planet-info">
           <div className="planet-info-text">
