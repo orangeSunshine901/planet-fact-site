@@ -347,6 +347,16 @@ nav {
   position: relative;
   height: 100%;
   grid-area: 1 / 1 / span 3 / 1;
+  animation: planet 0.4s ease;
+}
+
+@keyframes planet {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .mercury {
@@ -399,6 +409,17 @@ nav {
   right: 0;
   bottom: 0;
   z-index: 1;
+  opacity: 1;
+  animation: geology 0.4s ease;
+}
+
+@keyframes geology {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .planet-image img:first-child {
